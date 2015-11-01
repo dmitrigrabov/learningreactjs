@@ -35,7 +35,7 @@ gulp.task('browserify', function() {
 
 gulp.task('watch', function() {
   return (
-    gulp.watch( [ src + '/*.js', src + '/*.jsx' ], ['browserify'])
+    gulp.watch( [ __dirname + src + '/**/*.js', __dirname + src + '/**/*.jsx' ], ['browserify'])
   );
 });
 
