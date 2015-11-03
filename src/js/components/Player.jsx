@@ -1,4 +1,6 @@
 var React   = require( 'react' ),
+    Search  = require( './Search' ),
+    Playlist = require( './Playlist' ),
     Player;
 
 var player;
@@ -34,18 +36,22 @@ Player = React.createClass({
     player.loadVideoById( '9bZkp7q19f0' );
   },
 
+  playVideo: function( videoId ){
+    player.loadVideoById( videoId );
+  },
+
   render: function(){
     return (
       <div>
         <div id="player"></div>
         <a href="#" onClick={ this.handleClick }>Play</a>
         <div>
+          <Search playVideo={this.playVideo} />
         </div>
+        <Playlist />
       </div>
     );
   }
 });
 
 module.exports = Player;
-
-a0999b0d8d95

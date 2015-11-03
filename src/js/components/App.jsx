@@ -1,10 +1,13 @@
 var React = require( 'react' ),
+    Player = require( './Player' ),
     App;
 
 App = React.createClass({
   render: function(){
     return (
-      <div>It works!</div>
+      <div>
+        <Player />
+      </div>
     );
   }
 });
