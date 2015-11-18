@@ -14,18 +14,22 @@ Player = React.createClass({
         // videoId: 'M7lc1UVf-VE',
         events: {
           // 'onReady': self.onPlayerReady,
-          'onStateChange': self.onPlayerStateChange
+          // 'onStateChange': self.onPlayerStateChange
         }
       });
     }
   },
 
-  onPlayerReady: function( event ){
-    event.target.playVideo();
-  },
+  // onPlayerReady: function( event ){
+  //   event.target.playVideo();
+  // },
 
-  onPlayerStateChange: function( event ){
+  // onPlayerStateChange: function( event ){
 
+  // },
+
+  playVideo: function( videoId ){
+    player.loadVideoById( videoId );
   },
 
   handleClick: function( event ){
@@ -47,5 +51,3 @@ Player = React.createClass({
 });
 
 module.exports = Player;
-
-a0999b0d8d95
