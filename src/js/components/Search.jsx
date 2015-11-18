@@ -1,4 +1,5 @@
 var React = require( 'react' ),
+    $     = require( 'jquery' ),
     Search;
 
 Search = React.createClass({
