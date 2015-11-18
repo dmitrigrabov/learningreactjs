@@ -4,7 +4,7 @@ var React = require( 'react' ),
 App = React.createClass({
   render: function(){
     return (
-      <div>It works!</div>
+      <div className="some class">It works!</div>
     );
   }
 });
