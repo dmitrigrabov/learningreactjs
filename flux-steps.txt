@@ -1,0 +1,19 @@
+Flux steps
+==========
+
+Setup
+1. Attach change listener to Store from Component
+
+Execution
+1. Trigger app action from Component
+2. Create and emit app action
+3. - execute Service
+4. - Call server action from Service
+5. Dispatcher sends action to all Stores
+6. Store receives action and perfoms operation
+7. Store emits a change event
+8. Subscribed Component request new state from Store
+9. Component re-renders as a result of state change
+
+Teardown
+10. Remove change listeners from Component on unmount
